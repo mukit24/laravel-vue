@@ -2,7 +2,11 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
 
+Route::get('/blogs', [BlogController::class, 'blog_list']);
+Route::post('/blogs', [BlogController::class, 'create_blog']);
+Route::get('/blogs/{id}', [BlogController::class, 'blog_details']);
 /*
 |--------------------------------------------------------------------------
 | API Routes

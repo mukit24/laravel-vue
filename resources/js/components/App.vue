@@ -12,8 +12,7 @@
     export default {
         name: 'App',
         components: {
-            Navbar,
-            Showcase
+            Navbar
         },
         mounted() {
             console.log('Component mounted.')
